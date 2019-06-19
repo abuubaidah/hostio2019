@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+}
+/*==========================================
+    section title
+==========================================*/
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    h2 { 
+        color: #007bff;
+        text-transform: capitalize;
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 21px;
+        margin-top: -9px;
+    }
+    p {
+        font-size: 16px;
+        color: #182C61;
+        line-height: 28px;
+        margin-bottom: -5px;
+        font-weight: 500;
+    }
+}
+.c-white {
+    color: $white;
+}
+
+@media only screen and (max-width: 991px) {
+  .row.reorder-xs {
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    direction: rtl; }
+  .row.reorder-xs > [class*="col-"] {
+    -ms-transform: rotate(-180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-180deg);
+    direction: ltr; } }
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.row.homepage-about-xs {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  direction: rtl; }
+.row.homepage-about-xs > [class*="col-"] {
+  -ms-transform: rotate(-180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-180deg);
+  direction: ltr; } }
+
+
+/*==========================================
+    Preloader
+==========================================*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 555;
+  background: white;
+
+  .progress {
+    background: #007bff;
+    animation: preloader 5s infinite;
+  }
+}
+
+@keyframes preloader {
+  0% {
+    width: 2%
+  }
+
+  50% {
+    width: 20%
+  }
+
+  100% {
+    width: 2%
+  }
+}
+
+
+/*==========================================
+    scroll to top button
+==========================================*/
+.scroll-to-top {
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    display: inline-block;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    background: #052157;
+    border: 2px solid $white;
+    text-align: center;
+}
+.scroll-to-top a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    padding: 2px 0 0px 0;
+    display: inline-block;
+}
+.scroll-to-top a i {
+  color: $white;
+}
